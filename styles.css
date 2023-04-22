@@ -1,0 +1,74 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: white;
+    margin: 1rem;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: #9e191d;
+    text-align: center;
+    font-weight: 900;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#searchBar {
+    margin-bottom: 20px;
+    width: 100%;
+}
+  
+
+/* table css    */
+.tbody {
+    width: 100%;
+}
+
+
+table{
+	width: 100%;
+    table-layout: fixed;
+}
+
+.stats{
+    width: 100%;
+    font-size: .7rem;
+    font-variant: petite-caps;
+    text-align: center;
+}
+
+#pagination-buttons {
+    width: 100%;
+    justify-content: center;
+    padding: .5rem;
+}
+
+th{
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-top: .3rem;
+  font-weight: 900;    
+  font-style: italic;
+  font-variant: small-caps;
+	background-color: #e6e6e6;
+}
+
+td{
+    width: 110%;
+	text-align: center;
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+
+
+  @media screen and (max-width: 768px) {
+    /* reduce the font size and padding of the table cells */
+    td, th {
+      font-size: 12px;
+      padding: 4px;
+    }
+  }
+
+  #resultsPP {
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+    width: 100%;
+ }

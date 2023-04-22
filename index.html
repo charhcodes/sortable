@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>your least favourite superhero database</title>
+        <link rel="stylesheet" href="styles.css" />
+
+        <!-- import google fonts -->
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Sans+Pro:ital,wght@0,300;1,900&display=swap');
+        </style>
+    </head>
+    <body>
+        <h1>YOUR LEAST FAVOURITE SUPERHERO DATABASE</h1>
+            <div id="searchWrapper">
+                <input type="text" id="searchBar" placeholder="search a hero here..."/>
+            </div>
+            <!-- results per page dropdown list -->
+            <div id="resultsPP">
+                <label for="results-per-page">Results per page:</label>
+                <select id="results-per-page">
+                    <option value="10">10</option>
+                    <option value="20" selected>20</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                    <option value="all">All</option>
+                </select>
+            </div>
+            <!-- table -->
+            <table>
+                <!-- table head here, every header contains sort buttons -->
+                <thead>
+                   <tr>
+                    <th>Image</th>
+                    <th>Name<br><button id="sort-name">▼</button></th>
+                    <th>Full Name<br><button id="sort-fname">▼</button></th>
+                    <th colspan="6">Powerstats
+                        <table div class="stats">
+                           <th scope="row">Intelligence<br><button id="sort-intel">▼</button></th>
+                           <th>Strength<br><button id="sort-str">▼</button></th>
+                           <th>Speed<br><button id="sort-spd">▼</button></th>
+                           <th>Durability<br><button id="sort-dur">▼</button></th>
+                           <th>Power<br><button id="sort-pow">▼</button></th>
+                           <th>Combat<br><button id="sort-com">▼</button></th>
+                       </div>
+                       </th></table>
+                     <th>Race<br><button id="sort-race">▼</button></th>
+                     <th>Gender<br><button id="sort-gen">▼</button></th>
+                     <th>Height<br><button id="sort-hght">▼</button></th>
+                     <th>Weight<br><button id="sort-wght">▼</button></th>
+                     <th>Place Of Birth<br><button id="sort-home">▼</button></th>
+                     <th>Alignment<br><button id="sort-align">▼</button></th>
+                   </tr>
+                </thead>
+                <!-- table body here, provided in main.js -->
+                <tbody id="charactersList"></tbody>
+             </table>
+        </div>
+        <!-- page buttons, provided in main.js, auto-generated -->
+        <button id="pagination-buttons"></button>
+        <!-- normal code -->
+        <script src="main.js"></script> 
+        <!-- sorting functions -->
+        <script src="sort-copy.js"></script>
+    </body>
+</html>
